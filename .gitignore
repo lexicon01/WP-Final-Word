@@ -102,23 +102,7 @@ node_modules/
 
 
 # lex is adding something else
-wp-content/themes/catch-starter*/
-wp-content/themes/catch-starter/*
-/wp-content/themes/catch-starter
-wp-content/themes/catch*/
-./wp-content/themes/catch-starter/
-.wp-content/themes/catch-starter*/
-/catch-starter
-./catch-starter/
-.catch-starter/
-
-wp-content/themes/starter-child*/
-/wp-content/themes/starter-child
-/wp-content/themes/starter-child/
-./wp-content/themes/starter-child/
-/starter-child
-./starter-child/
-.starter-child/
+wp-content/themes/catch-starter/
 
 
 
