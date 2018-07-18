@@ -105,10 +105,12 @@ node_modules/
 wp-content/themes/catch-starter*/
 /catch-starter/
 ./catch-starter/
+.catch-starter/
 
 wp-content/themes/starter-child*/
 /starter-child/
 ./starter-child/
+.starter-child/
 
 
 
