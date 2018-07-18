@@ -87,7 +87,7 @@ Thumbs.db
 # "themes" directory
 
 # lex is adding something else
-catch-starter/*
+,/catch-starter/*
 
 wp-content/*
 !wp-content/mu-plugins/
