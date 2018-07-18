@@ -1,0 +1,28 @@
+/*
+Theme Name: Lexicon
+Theme URI: https://lexicon.github.io/ArtStudio
+Author: Lexicon
+Author URI: https://lexicon.github.io
+Description: This richea is a che che che ripp off from a du site nam sayin
+template:catch-starter
+Version: 1.0.3
+
+*/
+@import url("../catch-starter/style.css");
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Erica+One');
+
+
+body {
+    background-color: lightblue;
+}
+
+.site-title a {
+    font-family: 'Monoton', cursive;
+    font-weight: 300;
+}
+
+.site-description {
+    font-family:'Erica One', cursive;
+    font-weight: 200;
+}
