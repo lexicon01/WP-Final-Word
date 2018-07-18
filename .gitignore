@@ -89,7 +89,7 @@ Thumbs.db
 wp-content/*
 !wp-content/mu-plugins/
 !wp-content/plugins/
-!wp-content/themes/
+wp-content/themes/
 
 # ignore these plugins
 wp-content/plugins/hello.php
@@ -102,5 +102,5 @@ node_modules/
 
 
 # lex is adding something else
-.wp-content/themes/catch-starter/
+# .wp-content/themes/catch-starter/
 
