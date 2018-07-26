@@ -1,0 +1,26 @@
+{
+  "name": "final-word",
+  "version": "1.0.0",
+  "description": "my first wordpress theme dev",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass theme/final-word"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lexicon01"
+  },
+  "author": "Lex",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-image": "^4.3.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.0.1",
+    "jshint": "^2.9.5"
+  }
+}

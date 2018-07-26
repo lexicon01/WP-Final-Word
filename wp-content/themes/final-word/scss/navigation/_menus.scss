@@ -3,12 +3,15 @@
 	display: block;
 	float: left;
 	width: 100%;
+	background-color: rgb(230, 23, 23);
 
 	ul {
-		display: none;
+		display: block;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
+		background-color: darkblue;
+
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
