@@ -1,4 +1,4 @@
-var themename = 'Final-Word';
+var themename = 'theme/final-word';
 
 var gulp = require('gulp'),
 	// Prepare and optimize code etc
@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 	image = require('gulp-image'),
 	jshint = require('gulp-jshint'),
 	postcss = require('gulp-postcss'),
-	scss = require('gulp-sass'),
+	sass = require('gulp-sass'),
 	sourcemaps = require('gulp-sourcemaps'),
 
 	// Only work with new or updated files
@@ -15,7 +15,7 @@ var gulp = require('gulp'),
 
 	// Name of working theme folder
 	root = '../' + themename + '/',
-	scss = root + 'scss/',
+	scss = root + 'sass/',
 	js = root + 'js/',
 	img = root + 'images/',
 	languages = root + 'languages/';
@@ -25,11 +25,11 @@ var gulp = require('gulp'),
 gulp.task('css', function() {
 	return gulp.src(scss + '{style.scss,rtl.scss}')
 	.pipe(sourcemaps.init())
-	.pipe(scss({
+	.pipe(sass({
 		outputStyle: 'expanded', 
 		indentType: 'tab',
 		indentWidth: '1'
-	}).on('error', scss.logError))
+	}).on('error', sass.logError))
 	.pipe(postcss([
 		autoprefixer('last 2 versions', '> 1%')
 	]))
@@ -56,11 +56,11 @@ gulp.task('javascript', function() {
 
 // Watch everything
 gulp.task('watch', function() {
-	// browserSync.init({ 
-	// 	open: 'external',
-	// 	proxy: 'themes\final-word',
-	// 	port: 8080
-	// });
+	browserSync.init({ 
+		open: 'external',
+		proxy: 'localhost/wordpress',
+		port: 8080
+	});
 	gulp.watch([root + '**/*.css', root + '**/*.scss' ], ['css']);
 	gulp.watch(js + '**/*.js', ['javascript']);
 	gulp.watch(img + 'RAW/**/*.{jpg,JPG,png}', ['images']);
