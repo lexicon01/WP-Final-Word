@@ -1,20 +1,20 @@
-$color__background-body: #fff;
-$color__background-screen: #f1f1f1;
-$color__background-hr: #ccc;
-$color__background-button: #e6e6e6;
-$color__background-pre: #eee;
-$color__background-ins: #fff9c0;
+$color__background-body: rgb(170, 91, 91);
+$color__background-screen: #58a32c;
+$color__background-hr: rgb(185, 212, 65);
+$color__background-button: #ec3030;
+$color__background-pre: rgb(235, 27, 27);
+$color__background-ins: #b1a648;
 
 $color__text-screen: #21759b;
 $color__text-input: #666;
 $color__text-input-focus: #111;
-$color__link: rgb(225, 182, 65);
-$color__link-visited: purple;
+$color__link: rgb(224, 194, 22);
+$color__link-visited: green;
 $color__link-hover: midnightblue;
-$color__text-main: #404040;
+$color__text-main: #2ab670;
 
-$color__border-button: #ccc #ccc #bbb;
-$color__border-button-hover: #ccc #bbb #aaa;
-$color__border-button-focus: #aaa #bbb #bbb;
-$color__border-input: #ccc;
+$color__border-button: rgb(192, 43, 43) rgb(29, 82, 57) rgb(233, 30, 91);
+$color__border-button-hover: rgb(46, 36, 138) rgb(185, 32, 32) rgb(180, 241, 36);
+$color__border-button-focus: rgb(218, 195, 195) rgb(134, 177, 233) rgb(130, 136, 40);
+$color__border-input: rgb(150, 30, 30);
 $color__border-abbr: #666;

@@ -1,4 +1,4 @@
-var themename = 'theme/final-word';
+var themename = 'theme/Final-Word';
 
 var gulp = require('gulp'),
 	// Prepare and optimize code etc
@@ -58,7 +58,7 @@ gulp.task('javascript', function() {
 gulp.task('watch', function() {
 	browserSync.init({ 
 		open: 'external',
-		proxy: 'localhost/wordpress',
+		proxy: 'localhost/wordpress/htdocs/wp-content/theme/final-word',
 		port: 8080
 	});
 	gulp.watch([root + '**/*.css', root + '**/*.scss' ], ['css']);

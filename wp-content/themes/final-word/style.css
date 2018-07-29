@@ -68,7 +68,7 @@ html {
 
 body {
 	margin: 0;
-	background-color: black;
+	background-color: rgb(78, 24, 104);
 }
 
 /**
@@ -396,11 +396,12 @@ input,
 select,
 optgroup,
 textarea {
-	color: #404040;
+	color: rgb(214, 241, 59);
 	font-family: sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
+	background-color:rgb(29, 214, 69);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -470,12 +471,13 @@ html {
 }
 
 body {
-	background: #fff;
+	background: rgb(231, 226, 226);
+	color: rgb(17, 14, 20);
 	/* Fallback for when there is no custom background color defined. */
 }
 
 hr {
-	background-color: #ccc;
+	background-color: rgb(124, 21, 21);
 	border: 0;
 	height: 1px;
 	margin-bottom: 1.5em;
