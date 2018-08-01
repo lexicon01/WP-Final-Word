@@ -376,7 +376,7 @@ address {
   margin: 0 0 1.5em; }
 
 pre {
-  background: #eb1b1b;
+  background: #f0e8e8;
   font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 15px;
   font-size: 0.9375rem;
@@ -415,7 +415,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #c54040;
+  background: #2ba08c;
   /* Fallback for when there is no custom background color defined. */ }
 
 hr {
@@ -466,9 +466,9 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   border: 1px solid;
-  border-color: #c02b2b #1d5239 #e91e5b;
+  border-color: #cec5c5 #1d5239 #cfc9cb;
   border-radius: 3px;
-  background: #ec3030;
+  background: #eee6e6;
   color: rgba(0, 0, 0, 0.8);
   font-size: 12px;
   font-size: 0.75rem;
@@ -478,7 +478,7 @@ input[type="submit"] {
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    border-color: #2e248a #b92020 #b4f124; }
+    border-color: #2e248a #b8b3b3 #b4f124; }
   button:active, button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
@@ -505,7 +505,7 @@ input[type="datetime-local"],
 input[type="color"],
 textarea {
   color: #666;
-  border: 1px solid #961e1e;
+  border: 1px solid #d8d4d4;
   border-radius: 3px;
   padding: 3px; }
   input[type="text"]:focus,
@@ -527,7 +527,7 @@ textarea {
     color: #111; }
 
 select {
-  border: 1px solid #961e1e; }
+  border: 1px solid #d8d4d4; }
 
 textarea {
   width: 100%; }
@@ -557,13 +557,13 @@ a {
   display: block;
   float: left;
   width: 100%;
-  background-color: #e61717; }
+  background-color: transparent; }
   .main-navigation ul {
     display: block;
     list-style: none;
     margin: 0;
     padding-left: 0;
-    background-color: #008b17; }
+    background-color: transparent; }
     .main-navigation ul ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
