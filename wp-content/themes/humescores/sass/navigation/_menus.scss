@@ -27,6 +27,7 @@
 				&:hover > ul,
 				&.focus > ul {
 					left: 100%;
+
 				}
 			}
 
@@ -62,6 +63,7 @@
 	a {
 		display: block;
 		text-decoration: none;
+		font-size: 20px;
 	}
 
 	.current_page_item > a,
