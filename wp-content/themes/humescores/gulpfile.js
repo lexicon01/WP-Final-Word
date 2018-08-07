@@ -60,8 +60,9 @@ gulp.task('javascript', function() {
 gulp.task('watch', function() {
 	browserSync.init({ 
 		open: 'external',
-		proxy: 'localhost/wordpress/humescores',
+		proxy: 'localhost/wordpress/htdocs/wp-content/themes/humescores',
 		port: 8080
+		
 	});
 	gulp.watch([root + '**/*.css', root + '**/*.scss' ], ['css']).on('change', browserSync.reload);
 	
