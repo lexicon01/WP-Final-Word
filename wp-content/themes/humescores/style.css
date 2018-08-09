@@ -459,7 +459,7 @@ html {
 }
 
 body {
-	background: #d4daeb;
+	background: #27d670;
 	/* Fallback for when there is no custom background color defined. */
 }
 
@@ -678,6 +678,7 @@ a:hover, a:active {
 	display: block;
 	text-decoration: none;
 	font-size: 20px;
+	color: #fff;
 }
 
 /* Small menu. */
@@ -830,6 +831,48 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Global layouts
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Global layouts
+--------------------------------------------------------------*/
+.site-header {
+	position: relative;
+	padding: 1em;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #b10a0a;
+	background-color: #020080;
+}
+
+.site-branding {
+	min-height: 65px;
+}
+
+.site-title {
+	margin: 0;
+	padding: 0;
+	font-size: 1.6em;
+	font-weight: 900;
+	line-height: 1em;
+}
+
+.site-title a {
+	color: #ca1616;
+	text-decoration: none;
+}
+
+.site-title a:hover, .site-title a:focus {
+	text-decoration: underline;
+}
+
+.site-description {
+	margin: 0;
+	font-size: .9em;
+	font-style: italic;
+	font-weight: 100;
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
