@@ -14,7 +14,7 @@ const	sourcemaps = require('gulp-sourcemaps');
 const	newer = require('gulp-newer');
 	
 		// Name of working theme folder
-const root = '../' + themename + '/';
+const root = '/' + themename + '/';
 const		scss = root + 'sass/';
 const		js = root + 'js/';
 const		img = root + 'images/';
