@@ -37,3 +37,19 @@
 	font-style: italic;
 	font-weight: 100;
 }
+
+@media screen and (min-width: $query__medium) {
+	.site-header {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.site-branding {
+		width: 35%;
+		flex: 1 0 auto;
+	}
+	
+	.site-navigation {
+		width: 55%;
+	}
+}
