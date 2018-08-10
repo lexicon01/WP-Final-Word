@@ -14,7 +14,7 @@ const	sourcemaps = require('gulp-sourcemaps');
 const	newer = require('gulp-newer');
 	
 		// Name of working theme folder
-const root = '/' + themename + '/';
+const root = '../' + themename + '/';
 const		scss = root + 'sass/';
 const		js = root + 'js/';
 const		img = root + 'images/';
@@ -59,17 +59,17 @@ gulp.task('javascript', function() {
 gulp.task('watch', function() {
 	browserSync.init({ 
 		open: 'external',
-		proxy: 'localhost/wordpress/htdocs/wp-content/theme/humescores',
-		port: 8080
+		proxy: 'localhost/wordpress'
+		// port: 8080
 		
 	});
 	gulp.watch([root + '**/*.css', root + '**/*.scss' ], ['css']).on('change', browserSync.reload);
 	gulp.watch(js + '**/*.js', ['javascript']).on('change', browserSync.reload);
 	gulp.watch(img + 'RAW/**/*.{jpg,JPG,png}', ['images']).on('change', browserSync.reload);
-	
+
 });
 
 
 
 // Default task (runs at initiation: gulp --verbose)
-gulp.task('default', ['watch','css','javascript','images']);
+gulp.task('default', ['css','javascript','images','watch']);
