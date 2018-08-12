@@ -1,0 +1,35 @@
+.site-footer {
+	position: relative;
+	padding: 1em;
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(252, 247, 247);
+	background-color: rgb(2, 0, 128);
+	text-align: center;
+
+    @media screen and (min-width: $query__small) {
+        padding: 1em 2em;
+    }
+   
+}
+
+.social-menu {
+    ul{
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+
+        a {
+            display: block;
+            padding: .5em 1em;
+            color: white;
+            text-decoration: none;
+
+            &:hover,
+            &:focus {
+                text-decoration: underline;
+            }
+        }
+    }
+}

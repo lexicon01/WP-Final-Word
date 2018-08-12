@@ -15,6 +15,15 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
+			<nav class="social-menu">
+			<?php
+				wp_nav_menu( array(
+					'theme_location' => 'social',
+				) );
+				?>
+			</nav>
+				
+
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'humescores' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */

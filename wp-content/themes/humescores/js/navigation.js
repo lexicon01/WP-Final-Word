@@ -5,7 +5,7 @@
  * navigation support for dropdown menus.
  * 
  * CHECK THIS FILE BECUASE ITS THE REASON THIS DROPDOWN ISSUE DOESNT WORK PROPERLY
- */
+ 
 ( function() {
 	var masthead, menuToggle, siteNavContain, siteNavigation;
 
@@ -13,8 +13,8 @@
 
 		// Add dropdown toggle that displays child menu items.
 		var dropdownToggle = $( '<button />', { 'class': 'dropdown-toggle', 'aria-expanded': false })
-			.append( humescoresScreenReaderText.icon )
-			.append( $( '<span />', { 'class': 'screen-reader-text', text: humescoresScreenReaderText.expand }) );
+		.append( $( '<span />', { 'class': 'dropdown-symbol', text: '+' }) )
+		.append( $( '<span />', { 'class': 'screen-reader-text', text: humescoresScreenReaderText.expand }) );
 
 		container.find( '.menu-item-has-children > a, .page_item_has_children > a' ).after( dropdownToggle );
 
@@ -110,12 +110,13 @@
 })( jQuery );
 */
 
+
 /* global humescoresScreenReaderText */
 /**
  * Theme functions file.
  *
  * Contains handlers for navigation and widget area.
- 
+ */
 
 (function( $ ) {
 	var masthead, menuToggle, siteNavigation;
@@ -242,4 +243,3 @@
 
 })( jQuery );
 
-*/
