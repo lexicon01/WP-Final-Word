@@ -16,8 +16,8 @@
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php
-			humescores_posted_on();
 			humescores_posted_by();
+			humescores_posted_on();
 			?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>

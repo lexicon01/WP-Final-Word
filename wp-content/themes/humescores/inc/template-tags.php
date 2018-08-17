@@ -26,7 +26,7 @@ if ( ! function_exists( 'humescores_posted_on' ) ) :
 
 		$posted_on = sprintf(
 			/* translators: %s: post date. */
-			esc_html_x( 'published on %s', 'post date', 'humescores' ),
+			esc_html_x( ' published on %s', 'post date', 'humescores' ),
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 
@@ -42,7 +42,7 @@ if ( ! function_exists( 'humescores_posted_by' ) ) :
 	function humescores_posted_by() {
 		$byline = sprintf(
 			/* translators: %s: post author. */
-			esc_html_x( 'by %s', 'post author', 'humescores' ),
+			esc_html_x( 'written by %s', 'post author', 'humescores' ),
 			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 		);
 
@@ -86,25 +86,26 @@ if ( ! function_exists( 'humescores_entry_footer' ) ) :
 			echo '</span>';
 		}
 
-		edit_post_link(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Edit <span class="screen-reader-text">%s</span>', 'humescores' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				get_the_title()
-			),
-			' <span class="edit-link">',
-			'</span>'
-		);
+	
 	}
 endif;
 
+edit_post_link(
+	sprintf(
+		wp_kses(
+			/* translators: %s: Name of current post. Only visible to screen readers */
+			__( 'Edit <span class="screen-reader-text">%s</span>', 'humescores' ),
+			array(
+				'span' => array(
+					'class' => array(),
+				),
+			)
+		),
+		get_the_title()
+	),
+	' <span class="edit-link">',
+	'</span>'
+);
 
 if ( ! function_exists( 'humescores_post_thumbnail' ) ) :
 	/**
