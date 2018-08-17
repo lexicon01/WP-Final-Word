@@ -17,3 +17,19 @@ a {
 		outline: 0;
 	}
 }
+
+.page-conent,
+.entry-content,
+.entry-summary,
+.comment-content {
+
+	a {
+		text-decoration: none;
+		border-bottom: 3px solid $color-interactive;
+
+		&:focus,
+		&:hover {
+			color: $color-interactive;
+		}
+	}
+}
